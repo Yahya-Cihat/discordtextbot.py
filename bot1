@@ -71,4 +71,4 @@ async def on_message(message):
   if any(word in msg for word in sigma_entry):
     await message.channel.send(random.choice(sigma_bot))
 #-------------------------------------------------------------
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('Your token here'))
