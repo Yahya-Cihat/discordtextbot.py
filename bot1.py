@@ -10,12 +10,9 @@ def upgrade_nokufur(nokufur_messages):
 def deletkufuretme(index):
   nokufur.remove(index)
 
-kufur = ["anne","sikiyim","xd","ugha"]
-kusmuk = ["lol","Lol","lOl","loL","LOl","LoL","lOL","league of legends",
-"leagueoflegends","LOL","IoI"]
+kufur = ["anne","sikiyim","ugha"]
 nokufur= ["Kufur etme terbiyesiz adam!","Küfür yok!"]
 sirket = ["şirket","sirket","Şirket","Sirket"]
-hatay = ["Hatay","hatay","park326","Park326"]
 capybara = ["capybara","Capybara"]
 sigma_entry =["sigma","Sigma"]
 sigma_bot = [
@@ -58,12 +55,8 @@ async def on_message(message):
     else:
       deletkufuretme(x)
       await message.channel.send('listeden silindi!')
-  if any(word in msg for word in kusmuk):
-    await message.channel.send(':nauseated_face: :face_vomiting:')
   if any(word in msg for word in sirket):
     await message.channel.send(':dollar: :heart_eyes: :money_mouth: ')
-  if any(word in msg for word in hatay):
-    await message.channel.send('Dunyanin en iyi yemegi :yum: ')
   if any(word in msg for word in capybara):
     await message.channel.send(
       "https://media.discordapp.net/attachments/662371340061507602/870394507894607912/external-content.duckduckgo.jpg"
